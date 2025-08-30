@@ -3,6 +3,7 @@ import { useAccessStore, useAppConfig } from "../store";
 import { collectModelsWithDefaultModel } from "./model";
 
 // Define the allowed models for the user
+// Updated: 2024-12-19 - Model restriction implemented
 const ALLOWED_MODELS = [
   // OpenAI models
   "gpt-5",
