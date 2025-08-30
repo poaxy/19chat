@@ -6,7 +6,7 @@ import { Path, SAAS_CHAT_URL } from "../constant";
 import { useAccessStore } from "../store";
 import Locale from "../locales";
 import Delete from "../icons/close.svg";
-import Logo from "../icons/logo.svg";
+import Logo from "../icons/19chat.png";
 import { useMobileScreen } from "@/app/utils";
 import BotIcon from "../icons/bot.svg";
 import { getClientConfig } from "../config/client";
@@ -162,7 +162,11 @@ function TopBanner() {
       onMouseLeave={handleMouseLeave}
     >
       <div className={clsx(styles["top-banner-inner"], "no-dark")}>
-        <Logo className={styles["top-banner-logo"]}></Logo>
+        <img
+          src={Logo.src}
+          alt="19chat logo"
+          className={styles["top-banner-logo"]}
+        />
         <span>{Locale.Auth.TopTips}</span>
       </div>
       {(isHovered || isMobile) && (
