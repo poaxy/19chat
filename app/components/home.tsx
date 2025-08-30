@@ -71,9 +71,10 @@ const SearchChat = dynamic(
   },
 );
 
-const Sd = dynamic(async () => (await import("./sd")).Sd, {
-  loading: () => <Loading noLogo />,
-});
+// Temporarily disabled SD component due to missing dependencies
+// const Sd = dynamic(async () => (await import("./sd/sd")).Sd, {
+//   loading: () => <Loading noLogo />,
+// });
 
 const McpMarketPage = dynamic(
   async () => (await import("./mcp-market")).McpMarketPage,
@@ -183,8 +184,9 @@ function Screen() {
   }
   const renderContent = () => {
     if (isAuth) return <AuthPage />;
-    if (isSd) return <Sd />;
-    if (isSdNew) return <Sd />;
+    // Temporarily disabled SD component due to missing dependencies
+    // if (isSd) return <Sd />;
+    // if (isSdNew) return <Sd />;
     return (
       <>
         <SideBar
