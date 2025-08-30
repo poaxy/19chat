@@ -257,7 +257,7 @@ export function SideBar(props: { className?: string }) {
           <img
             src={ChatGptIcon.src}
             alt="19chat logo"
-            style={{ width: "32px", height: "32px" }}
+            style={{ width: "32px", height: "auto" }}
           />
         }
         shouldNarrow={shouldNarrow}
